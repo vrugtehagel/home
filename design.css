@@ -2,6 +2,7 @@ body {
   margin: 0;
   font: 300 20px/1.5 Roboto, arial, sans-serif;
   background-color: #60c2ee;
+  color: rgba(0, 0, 0, 0.75);
 }
 
 h1, h2 {
@@ -29,7 +30,6 @@ section {
   position: absolute;
   right: 0;
   top: 40vh;
-  color: rgba(0, 0, 0, 0.75);
   transform: translateY(-50%);
 }
 #intro h1 {
@@ -62,9 +62,11 @@ section {
   height: 400px;
   opacity: 0.8;
 }
-.option h1 {
+.option h2 {
   grid-area: h1;
   align-self: end;
+  font-size: 4rem;
+  margin: 0;
 }
 .option p {
   grid-area: p;
@@ -98,7 +100,7 @@ section {
     display: block;
     margin: 144px auto;
   }
-  .option h1 {
+  .option h2 {
     margin: 36px auto 0;
     text-align: center;
   }
