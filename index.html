@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="design.css">
 	<script src="general.js"></script>
@@ -9,7 +10,7 @@
 <body>
 	<main>
 		<section id="intro">
-			<svg viewBox="0 0 160 90" preserveAspectRatio="xMinYMax slice" style="--time:0;">
+			<svg viewBox="0 0 1600 900" preserveAspectRatio="xMinYMax slice">
 				<defs>
 					<linearGradient id="reflection-pole" gradientTransform="rotate(90)">
 						<stop offset="0%" stop-color="#7b5e40" stop-opacity="0.4"></stop>
@@ -34,62 +35,62 @@
 					</radialGradient>
 				</defs>
 				<style>
-					@keyframes ropeSway { to { transform: skewX(10deg); } }
-					@keyframes ropeReflectionSway { to { transform: skew(-10deg); } }
-					@keyframes moveCloud { to { transform: translate(200px); } }
-				</style>
+								@keyframes ropeSway { to { transform: skewX(10deg); } }
+								@keyframes ropeReflectionSway { to { transform: skew(-10deg); } }
+								@keyframes moveCloud { to { transform: translate(2000px); } }
+							</style>
 				<!-- sky -->
-				<rect x="0" y="0" width="160" height="90" style="fill: #474350;"/>
-				<path d="M11 15V15M35 11V11M35 24V24M60 11V11M54 28V28M92 16V16M113 31V31M119 14V14M132 26V26M142 13V13M156 44V44M130 46V46M4 3V3M85 3V3" style="stroke:white;stroke-linecap:round;"/>
-				<path d="M21 18V18M26 10V10M45 8V8M44 24V24M51 19V19M51 19M56 14V14M68 12V12M66 4V4M81 23V23M64 28V28M85 16V16M81 8V8M12 10V10M4 19V19M101 33V33M105 10V10M129 7V7M131 16V16M152 24V24M141 39V39M122 35V35M111 21V21M149 9V9M97 3V3M29 25V25M18 3V3M42 37V37M66 43V43M91 37V37" style="stroke:white;stroke-width:.5;stroke-linecap:round;"/>
-				<rect x="0" y="0" width="160" height="80" style="fill: url(#set-sky);opacity:calc(25 * (var(--time) - .3) * (.7 - var(--time)));"/>
-				<rect x="0" y="0" width="160" height="90" style="fill:#bff4ff;opacity:calc(2 - 3 * var(--time));"/>
-				<circle cx="142" cy="22" r="7" style="fill: #ffa840;transform-origin:142px 22px;transform:translate(calc(-5px * var(--time)), calc(120px * var(--time))) scale(calc(1 + var(--time)))"/>
-				<path d="M-4 26A1 1 0 0 0 -4 18H-7V17A1 1 0 0 0 -25 17L-21 12H-25A1 1 0 0 0 -25 26Z" style="fill:#f2fdff;animation:180s -90s linear infinite moveCloud;"/>
-				<path d="M-4 36A1 1 0 0 0 -4 28H-7A8 8 0 0 0 -15 22A10 10 0 1 0 -25 36Z" style="fill:#f2fdff;animation:180s -150s linear infinite moveCloud;"/>
-				<path d="M-3 32A1 1 0 0 0 -3 26H-6A1 1 0 0 0 -18 26H-20A1 1 0 0 0 -20 32Z" style="fill:#f2fdff;animation:180s -30s linear infinite moveCloud;"/>
+				<rect x="0" y="0" width="1600" height="900" style="fill:#474350;"/>
+				<path d="M110 150V150M350 110V110M350 240V240M600 110V110M540 280V280M920 160V160M1130 310V310M1190 140V140M1320 260V260M1420 130V130M1560 440V440M1300 460V460M40 30V30M850 30V30" style="stroke:white;stroke-linecap:round;"/>
+				<path d="M210 180V180M260 100V100M450 80V80M440 240V240M510 190V190M510 190M560 140V140M680 120V120M660 40V40M810 230V230M640 280V280M850 160V160M810 80V80M120 100V100M40 190V190M1010 330V330M1050 100V100M1290 70V70M1310 160V160M1520 240V240M1410 390V390M1220 350V350M1110 210V210M1490 90V90M970 30V30M290 250V250M180 30V30M420 370V370M660 430V430M910 370V370" style="stroke:white;stroke-width:5;stroke-linecap:round;"/>
+				<rect x="0" y="0" width="1600" height="800" style="fill:url(#set-sky);opacity:calc(25 * (var(--time) - .3) * (.7 - var(--time)));"/>
+				<rect x="0" y="0" width="1600" height="900" style="fill:#bff4ff;opacity:calc(2 - 3 * var(--time));"/>
+				<circle cx="1420" cy="220" r="70" style="fill:#ffa840;transform-origin:1420px 220px;transform:translate(calc(-50px * var(--time)), calc(1200px * var(--time))) scale(calc(1 + var(--time)));"/>
+				<path d="M-40 260A10 10 0 0 0 -40 180H-70V170A10 10 0 0 0 -250 170L-210 120H-250A10 10 0 0 0 -250 260Z" style="fill:#f2fdff;animation:180s -90s linear infinite moveCloud;"/>
+				<path d="M-40 360A10 10 0 0 0 -40 280H-70A80 80 0 0 0 -150 220A100 100 0 1 0 -250 360Z" style="fill:#f2fdff;animation:180s -150s linear infinite moveCloud;"/>
+				<path d="M-30 320A10 10 0 0 0 -30 260H-60A10 10 0 0 0 -180 260H-200A10 10 0 0 0 -200 320Z" style="fill:#f2fdff;animation:180s -30s linear infinite moveCloud;"/>
 				<!-- trees -->
-				<path d="M25 79L24 43H12A12 12 0 0 0 0 26V79Z" style="fill: #89ae65;"/>
-				<circle cx="28" cy="67" r="5" style="fill: #98b57d;"/>
-				<path d="M37 77A7 7 0 0 0 30 70H23V90H37Z" style="fill: #7ab765;"/>
-				<path d="M30 68H16L23 44Z" style="fill: #4d7d2d;"/>
-				<circle cx="25" cy="51" r="4" style="fill: #abbd42;"/>
-				<circle cx="26" cy="33" r="3" style="fill: #9bbb4c;"/>
-				<rect x="13" y="53" width="4" height="10" style="fill: #944b2a;"/>
-				<circle cx="17" cy="42" r="14" style="fill: #6b9e31;"/>
-				<circle cx="19" cy="44" r="7" style="fill: #8aa83d;"/>
-				<path d="M24 75A1 1 0 0 0 24 69A1 1 0 0 0 11 69V75Z" style="fill: #508c3b;"/>
+				<path d="M250 790L240 430H120A120 120 0 0 0 0 260V790Z" style="fill:#89ae65;"/>
+				<circle cx="280" cy="670" r="50" style="fill:#98b57d;"/>
+				<path d="M370 770A70 70 0 0 0 300 700H230V900H370Z" style="fill:#7ab765;"/>
+				<path d="M300 680H160L230 440Z" style="fill:#4d7d2d;"/>
+				<circle cx="250" cy="510" r="40" style="fill:#abbd42;"/>
+				<circle cx="260" cy="330" r="30" style="fill:#9bbb4c;"/>
+				<rect x="130" y="530" width="40" height="100" style="fill:#944b2a;"/>
+				<circle cx="170" cy="420" r="140" style="fill:#6b9e31;"/>
+				<circle cx="190" cy="440" r="70" style="fill:#8aa83d;"/>
+				<path d="M240 750A10 10 0 0 0 240 690A10 10 0 0 0 110 690V750Z" style="fill:#508c3b;"/>
 				<!-- house -->
-				<path d="M19 76H2L10 45Z" style="fill: #c99e5f;"/>
-				<path d="M19 76H21L12 45H10Z" style="fill:#835d3e;"/>
-				<rect x="9" y="67" width="4" height="9" style="fill: #946767;"/>
-				<path d="M14.5 68V70" style="stroke: #98893e;"/>
-				<path d="M14.5 68V70" style="stroke:#ffc700;opacity:calc(1000 * var(--time) - 720);"/>
-				<path d="M15 68H14M15 70H14" style="stroke: #5a524c;stroke-linecap:round;stroke-width:.7;"/>
-				<path d="M4 76H0V45H12Z" style="fill: #675149;stroke: #675149;stroke-linejoin:round;"/>
-				<rect x="-11" y="52" width="52" height="37" style="fill: url(#lamp-light);opacity:calc(1000 * var(--time) - 720);"/>
-				<path d="M21 76L12 45L4 76" style="stroke: #67493e;fill:none;stroke-linejoin:round;stroke-linecap:square;"/>
+				<path d="M190 760H20L100 450Z" style="fill:#c99e5f;"/>
+				<path d="M190 760H210L120 450H100Z" style="fill:#835d3e;"/>
+				<rect x="90" y="670" width="40" height="90" style="fill:#946767;"/>
+				<path d="M145 680V700" style="stroke:#98893e;stroke-width:10;"/>
+				<path d="M145 680V700" style="stroke:#ffc700;stroke-width:10;opacity:calc(1000 * var(--time) - 720);"/>
+				<path d="M150 680H140M150 700H140" style="stroke:#5a524c;stroke-linecap:round;stroke-width:7;"/>
+				<path d="M40 760H0V450H120Z" style="fill:#675149;stroke:#675149;stroke-width:10;stroke-linejoin:round;"/>
+				<rect x="-110" y="520" width="520" height="370" style="fill:url(#lamp-light);opacity:calc(1000 * var(--time) - 720);"/>
+				<path d="M210 760L120 450L40 760" style="stroke:#67493e;fill:none;stroke-width:10;stroke-linejoin:round;stroke-linecap:square;"/>
 				<!-- background-water -->
-				<path d="M28 80Q37 80 44 80T63 80T87 80T109 80T132 80T160 80V90H0V80Z" style="fill: #7bd0f3;"/>
+				<path d="M280 800Q370 800 440 800T630 800T870 800T1090 800T1320 800T1600 800V900H0V800Z" style="fill:#7bd0f3;"/>
 				<!-- ground -->
-				<path d="M31 81A5 5 0 0 0 26 76H0V90H31Z" style="fill: #68814b;"/>
+				<path d="M310 810A50 50 0 0 0 260 760H0V900H310Z" style="fill:#68814b;"/>
 				<!-- pier -->
-				<path d="M33 84V75M62 84V76" style="stroke: #7b5e40;stroke-linecap:round;"/>
-				<path d="M61 77H26V76H33L36 77" style="stroke-linecap:square;stroke: #9e7852;"/>
-				<path d="M25 84V75M54 84V76" style="stroke: #7b5e40;stroke-linecap:round;"/>
+				<path d="M330 840V750M620 840V760" style="stroke:#7b5e40;stroke-linecap:round;stroke-width:10;"/>
+				<path d="M610 770H260V760H330L360 770" style="stroke-linecap:square;stroke:#9e7852;stroke-width:10;"/>
+				<path d="M250 840V750M540 840V760" style="stroke:#7b5e40;stroke-linecap:round;stroke-width:10;"/>
 				<!-- water -->
-				<path d="M0 81Q11 81 24 81T49 81T74 81T97 81T118 81T135 81T160 81V90H0Z" style="fill: #60c2ee;"/>
+				<path d="M0 810Q110 810 240 810T490 810T740 810T970 810T1180 810T1350 810T1600 810V900H0Z" style="fill:#60c2ee;"/>
 				<!-- person fishing -->
-				<path d="M56 76Q58 76 57 78M57 76Q59 76 58 78M56 76C55 76 55 74 56 74L57 76H55H56V74" style="stroke: #252525;fill:none;"/>
-				<circle cx="56.3" cy="73" r="1" style="fill: #252525;"/>
-				<path d="M72 70V81" style="stroke-width:0.3;stroke: #252525;transform-origin:72px 70px;transform:skew(5deg);animation:5s 0s ease-in-out alternate infinite ropeSway;"/>
-				<path d="M57 76Q67 71 73 70" style="stroke-width:.5;stroke: #252525;stroke-linecap:round;fill:none;"/>
+				<path d="M560 760Q580 760 570 780M570 760Q590 760 580 780M560 760C550 760 550 740 560 740L570 760H550H560V740" style="stroke:#252525;stroke-width:10;fill:none;"/>
+				<circle cx="563" cy="730" r="10" style="fill:#252525;"/>
+				<path d="M720 700V810" style="stroke-width:3;stroke:#252525;transform-origin:720px 700px;transform:skew(5deg);animation:5s 0s ease-in-out alternate infinite ropeSway;"/>
+				<path d="M570 760Q670 710 730 700" style="stroke-width:5;stroke:#252525;stroke-linecap:round;fill:none;"/>
 				<!-- reflections -->
-				<path d="M24.5 81H25.5V85.5H24.5M32.5 81H33.5V85.5H32.5ZM53.5 81H54.5V85.5H53.5ZM61.5 81H62.5V85.5H61.5Z" style="fill:url(#reflection-pole);"/>
-				<rect x="0" y="81" width="31" height="4.5" style="fill:url(#reflection-ground);"/>
-				<path d="M71.85 81H72.15V83.9H71.85Z" style="fill:url(#reflection-rod);transform-origin:72px 92px;transform:skew(-5deg);animation:5s 0s ease-in-out alternate infinite ropeReflectionSway;"/>
+				<path d="M245 810H255V855H245M325 810H335V855H325ZM535 810H545V855H535ZM615 810H625V855H615Z" style="fill:url(#reflection-pole);"/>
+				<rect x="0" y="810" width="310" height="45" style="fill:url(#reflection-ground);"/>
+				<path d="M718.5 810H721.5V839H718.5Z" style="fill:url(#reflection-rod);transform-origin:720px 920px;transform:skew(-5deg);animation:5s 0s ease-in-out alternate infinite ropeReflectionSway;"/>
 				<!-- night-sky overlay -->
-				<rect x="0" y="0" width="160" height="90" style="fill:rgba(46,19,131,.5);opacity:calc(2.5 * var(--time) - 1.2);"/>
+				<rect x="0" y="0" width="1600" height="900" style="fill:rgba(46,19,131,.5);opacity:calc(2.5 * var(--time) - 1.2);"/>
 			</svg>
 			<header>
 				<h1>You're fishing for a dev.</h1>
@@ -138,8 +139,196 @@
 					<use href="#fish-template-4" x="17" y="48" style="fill: #777470;transform-origin:12px 48px;animation:1.5s -1.3s ease-in-out alternate infinite swim;"></use>
 				</svg>
 				<h2>Sardines</h2>
-				<p>I'm not one of these. Sardines mimic each other, while I much prefer to go my own direction. I develop my own ideas and opinions, I don't blindly follow popular trends.</p>
+				<p>I'm not much like a sardine. Sardines mimic each other, while I much prefer to go my own direction. I develop my own ideas and opinions, I don't blindly follow popular trends.</p>
 			</div>
+			<div class="option">
+				<svg viewBox="0 0 100 100">
+					<defs>
+						<g id="jellyfish-squiggles-template" style="stroke: rgba(196, 183, 206, .8);stroke-width:3;stroke-linecap:round;fill:none;">
+							<path d="M 50.4007 36 Q 50.4007 36 50.4007 36 Q 50.4007 49.1707 38.1707 61.4007 Q 25.9408 74.4599 26.7108 87.4599 Q 27.4809 88.23 27.4809 89">
+								<animate attributeName="d" repeatCount="indefinite" dur="8s"= values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89 ; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89 ; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0 ; .5 ; 1"/>
+							</path>
+							<path d="M 41.4493 36 Q 41.4493 41.4707 46.5293 46.5507 Q 51.6092 60.1599 43.6892 73.1599 Q 35.7691 81.08 35.7691 89 Q 35.7691 89 35.7691 89">
+								<animate attributeName="d" begin="-1.8s" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89 ; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89 ; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0 ; .5 ; 1"/>
+							</path>
+							<path d="M 29.2993 36 Q 29.2993 47.7707 40.2293 58.7007 Q 51.1592 71.8599 49.0892 84.8599 Q 47.0191 86.93 47.0191 89 Q 47.0191 89 47.0191 89">
+								<animate attributeName="d" begin="-3.6s" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89 ; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89 ; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0 ; .5 ; 1"/>
+							</path>
+							<path d="M 37.5757 36 Q 37.5757 36 37.5757 36 Q 37.5757 42.5207 31.5207 48.5757 Q 25.4658 62.1099 32.4108 75.1099 Q 39.3559 82.055 39.3559 89">
+								<animate attributeName="d" begin="-6.1s" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89 ; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89 ; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0 ; .5 ; 1"/>
+							</path>
+						</g>
+					</defs>
+					<style>
+						@keyframes squish { to { transform: scale(1.1, .9); } }
+						@keyframes float { to { transform: translateY(5px); } }
+					</style>
+					<use href="#jellyfish-template" x="30" y="0" style="transform-origin:70px 50px;transform:scale(.7) rotate(7deg);"></use>
+					<g style="transform-origin:40px 50px;transform:translateY(-5px) rotate(-10deg);">
+						<g style="animation: 1.5s ease-in-out infinite alternate float;">
+							<use href="#jellyfish-squiggles-template"></use>
+							<path d="M21 35A1 1 0 0 1 56 35A1 1 0 0 1 49 35A1 1 0 0 1 42 35A1 1 0 0 1 35 35A1 1 0 0 1 28 35A1 1 0 0 1 21 35" style="fill:#c6b3cc;transform-origin:39px 29px;animation: 1.5s ease-in-out infinite alternate squish;"/>
+						</g>
+					</g>
+					<g style="transform-origin:40px 50px;transform:translateX(30px) scale(.7) rotate(5deg);opacity:0.7;">
+						<g style="animation: 1.5s ease-in-out -.5s infinite alternate float;">
+							<use href="#jellyfish-squiggles-template"></use>
+							<path d="M21 35A1 1 0 0 1 56 35A1 1 0 0 1 49 35A1 1 0 0 1 42 35A1 1 0 0 1 35 35A1 1 0 0 1 28 35A1 1 0 0 1 21 35" style="fill:#b2aac9;transform-origin:39px 29px;animation: 1.5s ease-in-out -.5s infinite alternate squish;"/>
+						</g>
+					</g>
+				</svg>
+				<h2>Jellyfish</h2>
+				<p>There are a lot of differences between me and a jellyfish. For one, I have a brain. And I'm keeping it active - instead of floating around in one place, I like to see other places and check out what other people've got going.</p>
+			</div>
+			<div class="option">
+				<svg viewBox="0 0 100 100">
+					<style>
+						@keyframes wiggleTail { to { transform: scale(0.9,1); } }
+						@keyframes wiggleFins { to { transform: rotate(2deg) scale(0.9,1); } }
+						@keyframes blowBackFin { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(17px, 7px); } }
+						@keyframes blowFrontFin { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(-7px, 12px); } }
+						@keyframes blowRightEye { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(5px, -3px); } }
+						@keyframes blowRightIris { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(3px, -3px); } }
+						@keyframes blowLeftEye { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(15px, -3px); } }
+						@keyframes blowLeftIris { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(14px, -4px); } }
+						@keyframes blowMouth { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(10px, -7px); } }
+						@keyframes blowTail { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: translate(-12px, 0px); } }
+						@keyframes blowBody { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: scale(3); } }
+						@keyframes blowBodyColor { 0%, 70.5%, 90%, 100% { fill:#d0be82; } 71%, 80% { fill: #dbcb95; } }
+						@keyframes float { to { transform: translateY(5px); } }
+						@keyframes blowRotate { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: rotate(-10deg); } }
+					</style>
+					<g style="opacity: 0.85;transform-origin:50px 50px;animation: 15s ease-in-out infinite blowRotate;">
+						<g style="animation: 2s ease-in-out infinite alternate float;">
+							<g style="animation:15s ease-in-out infinite blowBackFin;">
+								<path d="M55 56L60 62V62L56 67Z" style="stroke:#dadab4;stroke-linejoin:round;fill:#dadab4;transform-origin:55px 56px;animation:.4s ease-in-out -.2s infinite alternate wiggleFins;"/>
+							</g>
+							<g style="animation:15s ease-in-out infinite blowTail;">
+								<path d="M38 48L33 37L31 57L38 49Z" style="stroke:#dadab4;stroke-linejoin:round;fill:#dadab4;transform-origin:38px 48px;animation:.8s ease-in-out infinite alternate wiggleTail;"/>
+							</g>
+							<path d="M38 49Q43 60 51 60A1 1 0 0 0 51 38Q43 38 38 48" style="fill:#d0be82;"/>
+							<circle cx="51" cy="49" r="11" style="fill:#d0be82;transform-origin:50px 49px;animation:15s ease-in-out infinite blowBody;animation-name: blowBody,blowBodyColor;"/>
+							<g style="animation:15s 0s ease-in-out infinite blowFrontFin;">
+								<path d="M48 56L42 61L45 67Z" style="fill:#dadab4;stroke:#dadab4;stroke-linejoin:round;transform-origin:48px 56px;animation:.4s ease-in-out infinite alternate wiggleFins;"/>
+							</g>
+							<circle cx="50" cy="47" r="2" style="fill:#dfdee8;animation:15s 0s ease-in-out infinite blowRightEye;"/>
+							<circle cx="51" cy="47" r="1" style="fill:#645353;animation:15s 0s ease-in-out infinite blowRightIris;"/>
+							<circle cx="59" cy="47" r="2" style="fill:#dfdee8;animation:15s 0s ease-in-out infinite blowLeftEye;"/>
+							<circle cx="60" cy="47" r="1" style="fill:#645353;animation:15s 0s ease-in-out infinite blowLeftIris;"/>
+							<circle cx="56" cy="51" r="1" style="fill:#b09c8b;animation:15s 0s ease-in-out infinite blowMouth;"/>
+						</g>
+					</g>
+				</svg>
+				<h2>Puffer fish</h2>
+				<p>Unlike puffer fish, I like people! It's amazing what you can create together and what you can learn from others. Feedback is a key part of improvement, whether harsh or not. Oh, and I'm not poisonous. That helps too.</p>
+			</div>
+		</section>
+		<section id="cave-entrance">
+			<svg viewBox="0 0 160 90">
+				<defs>
+					<linearGradient id="smooth-cave-wall" gradientTransform="rotate(90)">
+						<stop offset="0%" stop-color="#586981"></stop>
+						<stop offset="100%" stop-color="#333b44"></stop>
+					</linearGradient>
+				</defs>
+				<!-- smooth transition -->
+				<rect x="0" y="90" width="160" height="10" style="fill:url(#smooth-cave-wall);"/>
+				<!-- cave -->
+				<path d="M0 52H50V50A11 11 0 0 1 61 40H91A6 6 0 0 1 97 46V48H102A6 6 0 0 1 108 54V62H132A9 9 0 0 1 141 71V75H160V90H0Z" style="fill: #586981;"/>
+				<path d="M97 46V48H89ZM50 50V52H64M47 66V64H27M141 80H160V82M6 55H28L21 58M41 90H43V80M68 61H87L85 59M108 71V62H112M127 75H141V71" style="fill:rgba(0, 0, 0, .08);"/>
+				<path d="M45 100H106V81A5 5 0 0 0 101 76V70A8 8 0 0 0 93 62H64A5 5 0 0 0 59 67V70H53A8 8 0 0 0 45 78Z" style="fill: #333b44;"/>
+				<!-- plants -->
+				<path d="M34 52V49A1 1 0 0 0 31 49A1 1 0 0 1 29 49V46A1 1 0 0 0 26 46V47A1 1 0 0 1 23 47V44A1 1 0 0 0 19 44V49A1 1 0 0 1 17 49V47A1 1 0 0 0 14 47V52Z" style="fill:rebeccapurple;"/>
+				<path d="M132 75Q130 73 132 70T132 66T132 63T132 58T132 54T132 51Q130 49 129 50Q127 53 129 55T129 59T129 63T129 67T129 71T129 75M126 75Q124 73 126 71T126 67T126 63T126 59T126 55T126 51T126 47T126 43Q124.5 41.5 123 43T123 46T123 50T123 54T123 58T123 62T123 66T123 70T123 75M135 75Q137 72 136 69T136 65T136 62T135 58T136 54Q137 52 138 54T138 57T137 60T138 65T138 69T139 75" style="fill: #326951;"/>
+				<path d="M62 47A1 1 0 0 0 64 47V40H70V41A1 1 0 0 0 72 41V40H73A1 1 0 0 0 75 40H77A2 2 0 0 0 75 38H74A2 2 0 0 0 72 36A1 1 0 0 0 70 36A2 2 0 0 0 68 38H66A1 1 0 0 0 62 38Z" style="fill: #549e80;"/>
+				<!-- foreground plants -->
+				<path d="M5 90Q2 91 1 86Q4 85 5 87Q7 83 5 80Q2 81 1 76Q4 75 5 77Q7 72 5 69T4 64Q2 63 2 59Q5 58 5 62Q8 58 7 55Q4 54 4 50Q10 50 8 55Q8 57 7 59Q10 55 12 56Q11 61 8 60Q5 64 5 65Q5 67 7 70Q8 66 11 66Q12 71 7 72Q7 75 6 78Q5 80 7 82Q8 78 12 78Q12 83 7 84Q6 87 6 90" style="fill: #374368;"/>
+				<path d="M145 100V72A6 6 0 0 1 151 66H155V60A5 5 0 0 1 160 55V100Z" style="fill:#374368;"/>
+			</svg>
+		</section>
+		<section id="this-is-me">
+			<svg viewBox="0 0 100 100" style="background-color:#333b44;">
+				<!-- back tentacles -->
+				<path d="M41 46V63A6 6 0 0 1 35 69H18A1 1 0 0 1 18 59" style="stroke: #99694d;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<path d="M50 51V61A15 15 0 0 0 65 76H74A8 8 0 1 1 66 84" style="stroke:#99694d;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<path d="M62 46A1 1 0 0 0 79 46V25A10 10 0 0 0 69 15A10 10 0 0 1 59 5" style="stroke:#99694d;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<path d="M39 35H17A13 13 0 1 1 30 21A6 6 0 0 1 24 28" style="stroke:#99694d;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<!-- front tentacles -->
+				<path d="M43 37V56A1 1 0 0 1 31 56V50A5 5 0 0 0 26 45H21A5 5 0 0 1 16 40" style="stroke:#ff9757;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<path d="M50 48V75A7 7 0 0 1 43 82H24A8 8 0 1 1 32 74" style="stroke:#ff9757;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<path d="M58 43V78A11 11 0 0 1 47 89H41A6 6 0 0 0 35 95" style="stroke:#ff9757;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<path d="M65 30V52A1 1 0 0 0 93 52V38A1 1 0 0 0 76 39A1 1 0 0 0 85 39" style="stroke:#ff9757;stroke-width:6;fill:none;stroke-linecap:round;"/>
+				<path d="M46 51A0.5 0.5 0 0 1 47 51L53 52A1 1 0 0 1 55 52L61 49A0.5 0.5 0 0 1 62 49L63 44H45Z" style="fill:#ff9757;"/>
+				<!-- body and face -->
+				<circle cx="49" cy="30" r="19" style="fill:#ff9757;"/>
+				<circle cx="50" cy="39" r="1" style="fill:#444;"/>
+				<circle cx="63" cy="39" r="1" style="fill:#444;"/>
+				<path d="M56 40Q57 41 58 40" style="stroke:#444;fill:none;stroke-linecap:round;"/>
+				<path d="M49 14A16 16 0 0 0 33 30" style="stroke: #ffac79;fill:none;stroke-linecap:round;stroke-width:2;"/>
+				<circle cx="33" cy="33" r="1" style="fill:#ffac79;"/>
+			</svg>
+			<h1>This is me.</h1>
+			<p>I'm flexible, can fill multiple roles, and I'm a little weird. In a good way. But enough with the analogies! I've been an enthousiastic frontender at heart for over 9 years now. Give me HTML and CSS, and I'm happy; give me Javascript as well and I can accomplish virtually anything. My passion doesn't end there though. I'm a sucker for learning, so I'm also well-versed in SCSS, React, PHP and NodeJS, and I've played around with things like Vue, Python, WebGL, and even some C++ and C#.</p>
+		</section>
+		<section id="wall-of-fame">
+			<h1>Wall of Fame</h1>
+			<ul>
+				<li tabindex="0">
+					<svg viewBox="0 0 100 100">
+						<rect x="0" y="0" width="100" height="100" style="fill:#e85656;"/>
+						<path d="M26 26V74L66 50M66 26H74V74H66" style="fill:#f8cdcd;"/>
+						<g style="fill: rgba(119,30,30,.4);">
+							<path d="M0 48V100H14Z"/>
+							<path d="M0 89V100H52Z"/>
+							<path d="M65 0H100V8Z"/>
+						</g>
+					</svg>
+					<h2>YoutubePls</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+				<li tabindex="0">
+					<h2>Geef een beetje liefde</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+				<li tabindex="0">
+					<svg viewBox="0 0 200 200">
+						<rect x="0" y="0" width="200" height="200" style="fill:#303030;"/>
+						<circle cx="100" cy="100" r="94" style="fill:#282828;"/>
+						<path d="M55 91V55H73V91H91V55H109V91H127V55H145V145H127V109H109V145" style="fill:#5050dd;"/>
+					</svg>
+					<h2>SVGMaker</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+				<li tabindex="0">
+					<h2>Art</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+				<li tabindex="0">
+					<h2>Pure CSS Calculator</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+				<li tabindex="0">
+					<h2>wadeacuff.com</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+				<li tabindex="0">
+					<h2>Sliding puzzle</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+				<li tabindex="0">
+					<svg viewBox="0 0 100 150">
+						<rect x="0" y="0" width="100" height="150" style="fill:#222;"/>
+						<g style="fill:#d2d2d2;font:bold 16px monospace;">
+							<text x="26" y="61" textLength="48" style="dominant-baseline:middle;">&lt;one</text>
+							<text x="26" y="75" textLength="48" style="dominant-baseline:middle;">zero</text>
+							<text x="26" y="89" textLength="48" style="dominant-baseline:middle;">one&gt;</text>
+						</g>
+						<path d="M0 150H100M0 0H100" style="stroke:#ff9757;stroke-width:4;"/>
+					</svg>
+					<h2>One Zero One</h2>
+					<p>Description lorem ipsuum dolor whatever</p>
+				</li>
+			</ul>
 		</section>
 	</main>
 </body>
