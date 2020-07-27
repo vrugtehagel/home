@@ -58,6 +58,7 @@ section {
 #options {
 	background: linear-gradient(to bottom, #60c2ee, #284998 60%);
 	color: rgba(255, 255, 255, .8);
+	padding-bottom: 72px;
 	&::before {
 		content: "";
 		position: absolute;
@@ -134,35 +135,31 @@ section {
 }
 
 #cave-entrance {
-	--enter-speed: .8s;
+	--size: 0;
 	z-index: 2;
 	min-height: auto;
-	padding-bottom: 56.25%;
-	background-color: #284998;
-	transition:
-		margin-bottom var(--enter-speed) cubic-bezier(.2,.8,.5,1),
-		background-color 0s 0s;
+	padding-bottom: 37.5%;
+	background-color: #333b44;
+	transition: background-color 0s 0s;
 	margin-bottom: 6.25vw;
 	svg {
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		transform: translateX(-50%);
-		height: 56.25vw;
+		transform: translateX(-50%) translateY(calc(var(--size) * -50vw));
+		height: calc(var(--size) * 200vh + (1 - var(--size)) * 37.5vw);
 		overflow: visible;
-		transition: var(--enter-speed) cubic-bezier(.2,.8,.5,1);
+		transition: .2s cubic-bezier(.2,.8,.5,1);
 	}
-	&.entered {
-		background-color: #333b44;
-		transition:
-			margin-bottom var(--enter-speed) cubic-bezier(.5,0,.8,.2) 0s,
-			background-color 0s var(--enter-speed);
-		margin-bottom: -50vw;
-		svg {
-			height: 450vh;
-			transform: translate(-50%, -50vw);
-			transition: var(--enter-speed) cubic-bezier(.5,0,.8,.2);
-		}
+	&::before {
+		content: "";
+		width: 100%;
+		height: calc((1 - var(--size)) * 85%);
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: #284998;
+		transition: .2s cubic-bezier(.2,.8,.5,1);
 	}
 }
 
@@ -173,34 +170,24 @@ section {
 #this-is-me {
 	width: 80%;
 	max-width: 1200px;
-	margin: 72px auto;
+	margin: -108px auto 72px;
 	padding: 72px 0;
 	display: grid;
 	grid-gap: 1em;
+	grid-template-columns: 2fr 3fr;
 	grid-template-rows: auto auto;
 	grid-template-areas:
 		"svg h1"
 		"svg p";
 	position: relative;
-	&::before {
-		content: "";
-		width: 100vw;
-		height: 100%;
-		position: absolute;
-		left: 50%;
-		top: 0;
-		transform: translateX(-50%);
-		background-color: #333b44;
-		z-index: -1;
-	}
 	svg {
 		grid-area: svg;
 		align-self: center;
 		padding-right: 1em;
 		box-sizing: border-box;
 		width: 100%;
-		height: 100%;
-		max-width: 400px;
+		height: 50vh;
+		max-width: 600px;
 		opacity: .8;
 	}
 	h1 {

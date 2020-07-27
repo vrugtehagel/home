@@ -15,20 +15,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	// set cave entering
 	(() => {
-		let entered = false;
 		const caveEntrance = document.getElementById('cave-entrance');
 		const getThreshold = () => caveEntrance.offsetTop + caveEntrance.offsetHeight - window.innerHeight;
 		window.addEventListener('scroll', event => {
 			const threshold = getThreshold();
-			console.log(window.scrollY, threshold, entered);
-			if(window.scrollY < threshold && entered){
-				entered = false;
-				caveEntrance.classList.remove('entered');
-			}
-			else if(window.scrollY > threshold && !entered){
-				entered = true;
-				caveEntrance.classList.add('entered');
-			}
+			let size = (window.scrollY - threshold) / (window.innerHeight * 1.3);
+			size = size < 0 ? 0 : size > 1 ? 1 : size;
+			caveEntrance.style.setProperty('--size', size);
 		});
 	})();
 });
