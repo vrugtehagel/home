@@ -2,14 +2,55 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff9757">
+	<meta name="msapplication-TileColor" content="#ff9757">
+	<meta name="theme-color" content="#292928">
+
+	<meta name="description" content="Hi there! I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
+	<meta name="keywords" content="vrugtehagel, programmer, html, css, javascript, ES6, php, design, front end, web design, graphic design, ux, ui, semantic, blog, artist">
+
+	<meta itemprop="name" content="vrugtehagel.">
+	<meta itemprop="description" content="I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
+	<meta itemprop="image" content="https://vrugtehagel.nl/card.png">
+
+	<meta name="twitter:card" content="vrugtehagel. Custom-fit tailor made webdesign.">
+	<meta name="twitter:title" content="vrugtehagel.">
+	<meta name="twitter:description" content="I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
+	<meta name="twitter:image" content="https://vrugtehagel.nl/card.png">
+
+	<meta property="og:title" content="vrugtehagel.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://vrugtehagel.nl">
+	<meta property="og:image:secure_url" itemprop="image" content="https://vrugtehagel.nl/card.png">
+	<meta property="og:description" content="I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
+
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="design.css">
 	<script src="general.js"></script>
 	<title>vrugtehagel</title>
 </head>
 <body>
+	<nav id="main-nav">
+		<a href="#options"></a>
+		<a href="#this-is-me"></a>
+		<a href="#wall-of-fame"></a>
+		<a href="#contact"></a>
+	</nav>
 	<main>
 		<section id="intro">
+			<svg viewBox="0 0 40 40" class="logo">
+				<title>vrugtehagel</title>
+				<g style="stroke: currentColor;fill: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px;">
+					<path d="M25 28L32 12 M7 12L14 28L21 12" style="fill: none;"></path>
+					<circle cx="23" cy="20" r="2" style="stroke: none;"></circle>
+				</g>
+			</svg>
 			<svg viewBox="0 0 1600 900" preserveAspectRatio="xMinYMax slice">
 				<defs>
 					<linearGradient id="reflection-pole" gradientTransform="rotate(90)">
@@ -35,10 +76,10 @@
 					</radialGradient>
 				</defs>
 				<style>
-								@keyframes ropeSway { to { transform: skewX(10deg); } }
-								@keyframes ropeReflectionSway { to { transform: skew(-10deg); } }
-								@keyframes moveCloud { to { transform: translate(2000px); } }
-							</style>
+					@keyframes ropeSway { to { transform: skewX(10deg); } }
+					@keyframes ropeReflectionSway { to { transform: skew(-10deg); } }
+					@keyframes moveCloud { to { transform: translate(2000px); } }
+				</style>
 				<!-- sky -->
 				<rect x="0" y="0" width="1600" height="900" style="fill:#474350;"/>
 				<path d="M110 150V150M350 110V110M350 240V240M600 110V110M540 280V280M920 160V160M1130 310V310M1190 140V140M1320 260V260M1420 130V130M1560 440V440M1300 460V460M40 30V30M850 30V30" style="stroke:white;stroke-linecap:round;"/>
@@ -46,9 +87,11 @@
 				<rect x="0" y="0" width="1600" height="800" style="fill:url(#set-sky);opacity:calc(25 * (var(--time) - .3) * (.7 - var(--time)));"/>
 				<rect x="0" y="0" width="1600" height="900" style="fill:#bff4ff;opacity:calc(2 - 3 * var(--time));"/>
 				<circle cx="1420" cy="220" r="70" style="fill:#ffa840;transform-origin:1420px 220px;transform:translate(calc(-50px * var(--time)), calc(1200px * var(--time))) scale(calc(1 + var(--time)));"/>
-				<path d="M-40 260A10 10 0 0 0 -40 180H-70V170A10 10 0 0 0 -250 170L-210 120H-250A10 10 0 0 0 -250 260Z" style="fill:#f2fdff;animation:180s -90s linear infinite moveCloud;"/>
-				<path d="M-40 360A10 10 0 0 0 -40 280H-70A80 80 0 0 0 -150 220A100 100 0 1 0 -250 360Z" style="fill:#f2fdff;animation:180s -150s linear infinite moveCloud;"/>
-				<path d="M-30 320A10 10 0 0 0 -30 260H-60A10 10 0 0 0 -180 260H-200A10 10 0 0 0 -200 320Z" style="fill:#f2fdff;animation:180s -30s linear infinite moveCloud;"/>
+				<g style="fill:#f2fdff;opacity:calc(.4 + 1.25 * (var(--time) - 1) * (var(--time) - 1));">
+					<path d="M-40 260A10 10 0 0 0 -40 180H-70V170A10 10 0 0 0 -250 170L-210 120H-250A10 10 0 0 0 -250 260Z" style="animation:180s -90s linear infinite moveCloud;"></path>
+					<path d="M-40 360A10 10 0 0 0 -40 280H-70A80 80 0 0 0 -150 220A100 100 0 1 0 -250 360Z" style="animation:180s -150s linear infinite moveCloud;"></path>
+					<path d="M-30 320A10 10 0 0 0 -30 260H-60A10 10 0 0 0 -180 260H-200A10 10 0 0 0 -200 320Z" style="animation:180s -30s linear infinite moveCloud;"></path>
+				</g>
 				<!-- trees -->
 				<path d="M250 790L240 430H120A120 120 0 0 0 0 260V790Z" style="fill:#89ae65;"/>
 				<circle cx="280" cy="670" r="50" style="fill:#98b57d;"/>
@@ -93,8 +136,8 @@
 				<rect x="0" y="0" width="1600" height="900" style="fill:rgba(46,19,131,.5);opacity:calc(2.5 * var(--time) - 1.2);"/>
 			</svg>
 			<header>
-				<h1>You're fishing for a dev.</h1>
-				<p>Let's take a dive into your options.</p>
+				<h1>You're fishing for a&nbsp;dev.</h1>
+				<p>Let's take a dive into your&nbsp;options.</p>
 			</header>
 		</section>
 		<section id="options">
@@ -198,7 +241,7 @@
 						@keyframes float { to { transform: translateY(5px); } }
 						@keyframes blowRotate { 0%, 70%, 100% { transform: none; } 71%, 80% { transform: rotate(-10deg); } }
 					</style>
-					<g style="opacity: 0.85;transform-origin:50px 50px;animation: 15s ease-in-out infinite blowRotate;">
+					<g style="transform-origin:50px 50px;animation: 15s ease-in-out infinite blowRotate;">
 						<g style="animation: 2s ease-in-out infinite alternate float;">
 							<g style="animation:15s ease-in-out infinite blowBackFin;">
 								<path d="M55 56L60 62V62L56 67Z" style="stroke:#dadab4;stroke-linejoin:round;fill:#dadab4;transform-origin:55px 56px;animation:.4s ease-in-out -.2s infinite alternate wiggleFins;"/>
@@ -219,8 +262,8 @@
 						</g>
 					</g>
 				</svg>
-				<h2>Puffer fish</h2>
-				<p>Unlike puffer fish, I like people! It's amazing what you can create together and what you can learn from others. Feedback is a key part of improvement, whether harsh or not. Oh, and I'm not poisonous. That helps too.</p>
+				<h2>Pufferfish</h2>
+				<p>Unlike pufferfish, I like people! It's amazing what you can create together and what you can learn from others. Feedback is a key part of improvement, whether harsh or not. Oh, and I'm not poisonous. That helps too.</p>
 			</div>
 		</section>
 		<section id="cave-entrance">
@@ -268,68 +311,88 @@
 				<circle cx="33" cy="33" r="1" style="fill:#ffac79;"/>
 			</svg>
 			<h1>This is me.</h1>
-			<p>I'm flexible, can fill multiple roles, and I'm a little weird. In a good way. But enough with the analogies! I've been an enthousiastic frontender at heart for over 9 years now. Give me HTML and CSS, and I'm happy; give me Javascript as well and I can accomplish virtually anything. My passion doesn't end there though. I'm a sucker for learning, so I'm also well-versed in SCSS, React, PHP and NodeJS, and I've played around with things like Vue, Python, WebGL, and even some C++ and C#.</p>
+			<p>I'm flexible, can fill multiple roles, and I'm a little weird. In a good way. But enough with the analogies! I'm vrugtehagel, an enthusiastic frontender at heart for over 9 years now. Give me HTML and CSS, and I'm happy; give me Javascript as well and I can accomplish virtually anything. My passion doesn't end there though. I'm a sucker for learning, so I'm also well-versed in SCSS, React, PHP and NodeJS, and I've played around with things like Vue, Python, WebGL, and even some C++ and C#.</p>
 		</section>
 		<section id="wall-of-fame">
 			<h1>Wall of Fame</h1>
-			<ul>
-				<li tabindex="0">
-					<svg viewBox="0 0 100 100">
-						<rect x="0" y="0" width="100" height="100" style="fill:#e85656;"/>
-						<path d="M26 26V74L66 50M66 26H74V74H66" style="fill:#f8cdcd;"/>
-						<g style="fill: rgba(119,30,30,.4);">
-							<path d="M0 48V100H14Z"/>
-							<path d="M0 89V100H52Z"/>
-							<path d="M65 0H100V8Z"/>
-						</g>
-					</svg>
-					<h2>YoutubePls</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-				<li tabindex="0">
-					<h2>Geef een beetje liefde</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-				<li tabindex="0">
-					<svg viewBox="0 0 200 200">
-						<rect x="0" y="0" width="200" height="200" style="fill:#303030;"/>
-						<circle cx="100" cy="100" r="94" style="fill:#282828;"/>
-						<path d="M55 91V55H73V91H91V55H109V91H127V55H145V145H127V109H109V145" style="fill:#5050dd;"/>
-					</svg>
-					<h2>SVGMaker</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-				<li tabindex="0">
-					<h2>Art</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-				<li tabindex="0">
-					<h2>Pure CSS Calculator</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-				<li tabindex="0">
-					<h2>wadeacuff.com</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-				<li tabindex="0">
-					<h2>Sliding puzzle</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-				<li tabindex="0">
-					<svg viewBox="0 0 100 150">
-						<rect x="0" y="0" width="100" height="150" style="fill:#222;"/>
-						<g style="fill:#d2d2d2;font:bold 16px monospace;">
-							<text x="26" y="61" textLength="48" style="dominant-baseline:middle;">&lt;one</text>
-							<text x="26" y="75" textLength="48" style="dominant-baseline:middle;">zero</text>
-							<text x="26" y="89" textLength="48" style="dominant-baseline:middle;">one&gt;</text>
-						</g>
-						<path d="M0 150H100M0 0H100" style="stroke:#ff9757;stroke-width:4;"/>
-					</svg>
-					<h2>One Zero One</h2>
-					<p>Description lorem ipsuum dolor whatever</p>
-				</li>
-			</ul>
+			<nav>
+				<a href="http://youtubepls.com" target="_blank" data-size="medium" style="background-image:url(images/youtubepls.svg);"></a>
+				<a href="https://vrugtehagel.nl/sliding-puzzle" target="_blank" data-size="small" style="background-image:url(images/sliding-puzzle.png);"></a>
+				<a href="http://geefeenbeetjeliefde.nl" target="_blank" data-size="large" style="background-image:url(images/geefeenbeetjeliefde.jpg);"></a>
+				<a href="https://vrugtehagel.nl/SVGMaker" target="_blank" data-size="medium" style="background-image:url(images/SVGMaker.svg);"></a>
+				<a href="https://vrugtehagel.nl/art" target="_blank" data-size="small" style="background:white;"></a>
+				<a href="https://wadeacuff.com" target="_blank" data-size="large" style="background-image:url(images/wadeacuff.jpg);"></a>
+				<a href="https://vrugtehagel.nl/pure-css-calculator" target="_blank" data-size="medium" style="background-image:url(images/pure-css-calculator.png);"></a>
+				<a href="https://vrugtehagel.nl/blog" target="_blank" data-size="small" style="background-image:url(images/one-zero-one.svg);"></a>
+			</nav>
+		</section>
+		<section id="contact">
+			<h1>Send me a letter!</h1>
+			<p>I collect messages in bottles. Send me one!</p>
+			<div id="letter">
+				<svg viewBox="0 0 150 100" preserveAspectRatio="none">
+					<path d="M150 105A10 5 0 0 1 140 110V99H150Z" style="fill:#b9a48a;"/>
+					<path d="M3 0H43L45 3L48 0H69L70 2L71 0H106L110 2L112 0H140A10 5 0 0 1 150 5V105A10 5 0 0 0 140 100H132L128 98L125 100H100L98 98L96 100H88L85 98L84 100H53L49 98L48 100H7L5 95L3 97L0 93V52L3 50L0 47V29L2 26L0 23V5" style="fill:#f4e4b1;"/>
+					<path d="M4 2L3 0L0 5Z" style="fill:#b9a48a;"/>
+				</svg>
+				<textarea placeholder="It's okay, you can tell me anything. I don't judge."></textarea>
+				<button>send</button>
+			</div>
+			<div id="letter-thanks">
+				<h1>Thank you!</h1>
+				<svg viewBox="20 20 60 60">
+					<defs>
+						<radialGradient id="voila-here-it-is">
+							<stop offset="10%" stop-color="#ffd700" stop-opacity=".5"></stop>
+							<stop offset="80%" stop-color="#ffd700" stop-opacity="0"></stop>
+						</radialGradient>
+					</defs>
+					<style>
+						@keyframes bottleWiggle { to { transform: rotate(30deg); } }
+						@keyframes tadaa { to { transform: rotate(360deg); } }
+					</style>
+					<path d="M47 20Q50 50 32 27L27 22L22 27L27 32Q50 50 20 47H14V53H20Q50 50 27 68L22 73L27 78L32 73Q50 50 47 80V86H53V80Q50 50 68 73L73 78L78 73L73 68Q50 50 80 53H86V47H80Q50 50 73 32L78 27L73 22L68 27Q50 50 53 20V14H47" style="fill:url(#voila-here-it-is);transform-origin:50px 50px;animation: 10s linear infinite tadaa;"/>
+					<g style="transform-origin:50px 50px;transform: rotate(25deg);animation:.8s ease-in-out alternate infinite bottleWiggle;">
+						<!-- bottle background -->
+						<path d="M53 68A3 3 0 0 0 56 65V50C56 41 52 44 52 34C53 34 53 31 52 31V31H48C47 31 47 34 48 34V34C48 44 44 41 44 50V65A3 3 0 0 0 47 68Z" style="fill: #6aac53;"/>
+						<!-- bottle contents / behind glass -->
+						<rect x="44" y="51" width="9" height="10" style="fill: #444;"/>
+						<path d="M47 66L50 67L55 52L52 51Z" style="fill: #fbf2a7;"/>
+						<path d="M51 33V29H49V33Z" style="stroke:#d8bf78;fill:#d8bf78;stroke-linejoin:round;"/>
+						<!-- bottle glass overlay -->
+						<path d="M53 68A3 3 0 0 0 56 65V50C56 41 52 44 52 34C53 34 53 31 52 31V31H48C47 31 47 34 48 34V34C48 44 44 41 44 50V65A3 3 0 0 0 47 68Z" style="fill:rgba(87, 146, 67, .7);"/>
+						<!-- things on top of bottle -->
+						<path d="M46 47V65" style="stroke:rgba(255,255,255,0.2);stroke-width:1.5;stroke-linecap:round;"/>
+						<rect x="44" y="51" width="5" height="10" style="fill: #e8df9b;"/>
+						<path d="M44 53H47V55H44ZM44 56H46V58H44Z" style="fill: #bab27c;"/>
+					</g>
+				</svg>
+			</div>
+			<svg viewBox="0 0 160 90">
+				<path d="M0 27A4 4 0 0 1 4 31V73H39A5 5 0 0 1 44 78H77A9 9 0 0 1 86 69H131A11 11 0 0 0 142 58A7 7 0 0 1 149 51H160V90H0Z" style="fill:#586981;"/>
+				<path d="M84 78H94L91 76ZM137 69L146 67L149 69M152 53H158L155 54M34 78L23 76L19 78M55 86L51 84L43 86M120 87H109L120 85" style="fill:rgba(0, 0, 0, .08);"/>
+				<path d="M0 52A6 6 0 0 1 6 58V80A10 10 0 0 1 16 90H0ZM116 90A8 8 0 0 1 124 82H150A6 6 0 0 1 156 76V66A4 4 0 0 1 160 62V90Z" style="fill:#374368;"/>
+				<path d="M54 78A2 2 0 0 1 56 76H58A2 2 0 0 1 60 74A1 1 0 0 1 63 74A1 1 0 0 1 64 75H65A2 2 0 0 1 67 77V78H65V81A1 1 0 0 1 63 81V78A1 1 0 0 1 61 78Z" style="fill:#549e80;"/>
+				<path d="M104 63H112C115 63 115 65 117 65A0.5 1 0 0 1 117 67C115 67 115 69 112 69H104Z" style="fill:#6aac53;"/>
+				<ellipse cx="104" cy="66" rx="2" ry="3" style="fill: rgb(90, 146, 71);"/>
+				<path d="M108 63A1 3 0 0 1 109 66H112A1 3 0 0 0 111 63" style="fill: #bbd677;"/>
+				<path d="M21 73V64C21 61 23 62 23 60V56H25V60C25 62 27 61 27 64V73Z" style="fill: #498658;"/>
+				<path d="M25 66L26 67L23 72L22 71Z" style="fill: #94b48c;"/>
+			</svg>
 		</section>
 	</main>
+	<footer>
+		<svg viewBox="0 0 40 40">
+			<title>vrugtehagel</title>
+			<g style="stroke: currentColor;fill: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px;">
+				<path d="M25 28L32 12 M7 12L14 28L21 12" style="fill: none;"></path>
+				<circle cx="23" cy="20" r="2" style="stroke: none;"></circle>
+			</g>
+		</svg>
+		<address>
+			<span></span>
+			<span>&copy; 2020 vrugtehagel. All Rights Reserved.</span>
+		</address>
+	</footer>
 </body>
 </html>
