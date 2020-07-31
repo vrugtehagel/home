@@ -1,9 +1,8 @@
-<svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg">
-	<rect x="0" y="0" width="100" height="150" style="fill:#222;"/>
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+	<rect x="0" y="0" width="100" height="100" style="fill:#222;"/>
 	<g style="fill:#d2d2d2;font:bold 16px monospace;">
-		<text x="26" y="61" textLength="48" style="dominant-baseline:middle;">&lt;one</text>
-		<text x="26" y="75" textLength="48" style="dominant-baseline:middle;">zero</text>
-		<text x="26" y="89" textLength="48" style="dominant-baseline:middle;">one&gt;</text>
+		<text x="26" y="36" textLength="48" style="dominant-baseline:middle;">&lt;one</text>
+		<text x="26" y="50" textLength="48" style="dominant-baseline:middle;">zero</text>
+		<text x="26" y="64" textLength="48" style="dominant-baseline:middle;">one&gt;</text>
 	</g>
-	<path d="M0 150H100M0 0H100" style="stroke:#ff9757;stroke-width:4;"/>
 </svg>

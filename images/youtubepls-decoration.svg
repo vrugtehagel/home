@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+	<g style="fill: rgba(119,30,30,.4);">
+		<path d="M0 48V100H11Z"/>
+		<path d="M0 93V100H52Z"/>
+		<path d="M65 0H100V5Z"/>
+	</g>
+</svg>
