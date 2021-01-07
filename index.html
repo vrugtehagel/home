@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -12,12 +12,10 @@
 	<meta name="msapplication-TileColor" content="#ff9757">
 	<meta name="theme-color" content="#292928">
 
+	<meta name="name" content="vrugtehagel.">
 	<meta name="description" content="Hi there! I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
 	<meta name="keywords" content="vrugtehagel, programmer, html, css, javascript, ES6, php, design, front end, web design, graphic design, ux, ui, semantic, blog, artist">
-
-	<meta itemprop="name" content="vrugtehagel.">
-	<meta itemprop="description" content="I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
-	<meta itemprop="image" content="https://vrugtehagel.nl/card.png">
+	<meta name="image" content="https://vrugtehagel.nl/card.png">
 
 	<meta name="twitter:card" content="vrugtehagel. Custom-fit tailor made webdesign.">
 	<meta name="twitter:title" content="vrugtehagel.">
@@ -27,7 +25,7 @@
 	<meta property="og:title" content="vrugtehagel.">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://vrugtehagel.nl">
-	<meta property="og:image:secure_url" itemprop="image" content="https://vrugtehagel.nl/card.png">
+	<meta property="og:image:secure_url" content="https://vrugtehagel.nl/card.png">
 	<meta property="og:description" content="I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
 
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
@@ -36,22 +34,17 @@
 	<title>vrugtehagel</title>
 </head>
 <body>
-	<nav id="main-nav">
-		<a href="#options"></a>
-		<a href="#this-is-me"></a>
-		<a href="#wall-of-fame"></a>
-		<a href="#contact"></a>
-	</nav>
 	<main>
 		<section id="intro">
-			<svg viewBox="0 0 40 40" class="logo">
+			<svg viewBox="0 0 40 40" class="logo" role="img">
 				<title>vrugtehagel</title>
 				<g style="stroke: currentColor;fill: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px;">
 					<path d="M25 28L32 12 M7 12L14 28L21 12" style="fill: none;"></path>
 					<circle cx="23" cy="20" r="2" style="stroke: none;"></circle>
 				</g>
 			</svg>
-			<svg viewBox="0 0 1600 900" preserveAspectRatio="xMinYMax slice">
+			<svg viewBox="0 0 1600 900" preserveAspectRatio="xMinYMax slice" role="img">
+				<title>Person fishing</title>
 				<defs>
 					<linearGradient id="reflection-pole" gradientTransform="rotate(90)">
 						<stop offset="0%" stop-color="#7b5e40" stop-opacity="0.4"></stop>
@@ -141,8 +134,10 @@
 			</header>
 		</section>
 		<section id="options">
+			<h2>These are some fish of the sea.</h2>
 			<div class="option">
-				<svg viewBox="0 0 100 100">
+				<svg viewBox="0 0 100 100" role="img">
+					<title>Sardines</title>
 					<defs>
 						<g id="fish-template-1">
 							<path d="M7 -1C-8 -10 -8 10 7 1Q12 5 9 0Q12 -5 7 -1"/>
@@ -181,15 +176,16 @@
 					<use href="#fish-template-4" x="50" y="30" style="fill: #5a5a53;transform-origin:45px 30px;animation:1.5s -.9s ease-in-out alternate infinite swim;"></use>
 					<use href="#fish-template-4" x="17" y="48" style="fill: #777470;transform-origin:12px 48px;animation:1.5s -1.3s ease-in-out alternate infinite swim;"></use>
 				</svg>
-				<h2>Sardines</h2>
+				<h3>Sardines</h3>
 				<p>I'm not much like a sardine. Sardines mimic each other, while I much prefer to go my own direction. I develop my own ideas and opinions, I don't blindly follow popular trends.</p>
 			</div>
 			<div class="option">
-				<svg viewBox="0 0 100 100">
+				<svg viewBox="0 0 100 100" role="img">
+					<title>Jellyfish</title>
 					<defs>
 						<g id="jellyfish-squiggles-template" style="stroke: rgba(196, 183, 206, .8);stroke-width:3;stroke-linecap:round;fill:none;">
 							<path d="M 50.4007 36 Q 50.4007 36 50.4007 36 Q 50.4007 49.1707 38.1707 61.4007 Q 25.9408 74.4599 26.7108 87.4599 Q 27.4809 88.23 27.4809 89">
-								<animate attributeName="d" repeatCount="indefinite" dur="8s"= values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89 ; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89 ; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0 ; .5 ; 1"/>
+								<animate attributeName="d" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89 ; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89 ; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0 ; .5 ; 1"/>
 							</path>
 							<path d="M 41.4493 36 Q 41.4493 41.4707 46.5293 46.5507 Q 51.6092 60.1599 43.6892 73.1599 Q 35.7691 81.08 35.7691 89 Q 35.7691 89 35.7691 89">
 								<animate attributeName="d" begin="-1.8s" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89 ; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89 ; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0 ; .5 ; 1"/>
@@ -220,11 +216,12 @@
 						</g>
 					</g>
 				</svg>
-				<h2>Jellyfish</h2>
+				<h3>Jellyfish</h3>
 				<p>There are a lot of differences between me and a jellyfish. For one, I have a brain. And I'm keeping it active - instead of floating around in one place, I like to see other places and check out what other people've got going.</p>
 			</div>
 			<div class="option">
-				<svg viewBox="0 0 100 100">
+				<svg viewBox="0 0 100 100" role="img">
+					<title>Pufferfish</title>
 					<style>
 						@keyframes wiggleTail { to { transform: scale(0.9,1); } }
 						@keyframes wiggleFins { to { transform: rotate(2deg) scale(0.9,1); } }
@@ -262,12 +259,13 @@
 						</g>
 					</g>
 				</svg>
-				<h2>Pufferfish</h2>
+				<h3>Pufferfish</h3>
 				<p>Unlike pufferfish, I like people! It's amazing what you can create together and what you can learn from others. Feedback is a key part of improvement, whether harsh or not. Oh, and I'm not poisonous. That helps too.</p>
 			</div>
 		</section>
-		<section id="cave-entrance">
-			<svg viewBox="0 0 160 60">
+		<div id="cave-entrance">
+			<svg viewBox="0 0 160 60" role="img">
+				<title>Entering a cave</title>
 				<defs>
 					<linearGradient id="smooth-cave-wall" gradientTransform="rotate(90)">
 						<stop offset="0%" stop-color="#586981"></stop>
@@ -288,9 +286,10 @@
 				<path d="M5 70Q2 70 1 66Q4 65 5 67Q7 63 5 60Q2 61 1 56Q4 55 5 57Q7 52 5 49T4 44Q2 43 2 39Q5 38 5 42Q8 38 7 35Q4 34 4 30Q10 30 8 35Q8 37 7 39Q10 35 12 36Q11 41 8 40Q5 44 5 45Q5 47 7 50Q8 46 11 46Q12 51 7 52Q7 55 6 58Q5 60 7 62Q8 58 12 58Q12 63 7 64Q6 67 6 70" style="fill: #374368;"/>
 				<path d="M145 70V42A6 6 0 0 1 151 36H155V30A5 5 0 0 1 160 25V70Z" style="fill:#374368;"/>
 			</svg>
-		</section>
+		</div>
 		<section id="this-is-me">
-			<svg viewBox="0 0 100 100">
+			<svg viewBox="0 0 100 100" role="img">
+				<title>An octopus</title>
 				<!-- back tentacles -->
 				<path d="M41 46V63A6 6 0 0 1 35 69H18A1 1 0 0 1 18 59" style="stroke: #99694d;stroke-width:6;fill:none;stroke-linecap:round;"/>
 				<path d="M50 51V61A15 15 0 0 0 65 76H74A8 8 0 1 1 66 84" style="stroke:#99694d;stroke-width:6;fill:none;stroke-linecap:round;"/>
@@ -310,116 +309,174 @@
 				<path d="M49 14A16 16 0 0 0 33 30" style="stroke: #ffac79;fill:none;stroke-linecap:round;stroke-width:2;"/>
 				<circle cx="33" cy="33" r="1" style="fill:#ffac79;"/>
 			</svg>
-			<h1>This is me.</h1>
-			<p>I'm flexible, can fill multiple roles, and I'm a little weird. In a good way. But enough with the analogies! I'm vrugtehagel, an enthusiastic frontender at heart for over 9 years now. Give me HTML and CSS, and I'm happy; give me Javascript as well and I can accomplish virtually anything. My passion doesn't end there though. I'm a sucker for learning, so I'm also well-versed in SCSS, React, PHP and NodeJS, and I've played around with things like Vue, Python, WebGL, and even some C++ and C#.</p>
+			<h2>This is me.</h2>
+			<p>I'm flexible, can fill multiple roles, and I'm a little weird. In a good way. But enough with the analogies! I'm vrugtehagel, an enthusiastic frontender for over 9 years now. Give me HTML and CSS, and I'm happy; give me Javascript as well and I can accomplish virtually anything. My passion doesn't end there though. I'm a sucker for learning, so I'm also well-versed in SCSS, React, PHP and NodeJS, and I've played around with things like Vue, Python, WebGL, and even some C++ and C#.</p>
 		</section>
 		<section id="wall-of-fame" class="ready">
-			<h1>Wall of Fame</h1>
-			<ul id="posters">
-				<li data-project="youtubepls" data-size="medium">
+			<h2>Wall of Fame</h2>
+			<p>These are a few of my most prestigious projects.</p>
+			<div id="posters">
+				<button data-project="youtubepls" data-size="medium">
 					<template>
-						<h2>YoutubePls</h2>
-						<p>YoutubePls is a useful Chrome extension that aims to improve the general Youtube experience. Youtube is nice and all, but ads can get annoying. Blocking them however denies the creator's revenue - and that how this project was born. It mutes ads, and skips them when the skip button is available. Not only that, but it also clicks away popup ads and even gets rid of the "are you still watching" dialog.</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>YoutubePls</h3>
+							<p>YoutubePls is a useful Chrome extension that aims to improve the general Youtube experience. Youtube is nice and all, but ads can get annoying. Blocking them however denies the creator's revenue - and that how this project was born. It mutes ads, and skips them when the skip button is available. Not only that, but it also clicks away popup ads and even gets rid of the "are you still watching" dialog.</p>
+						</div>
 						<a href="http://youtubepls.com" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-				<li data-project="sliding-puzzle" data-size="small">
+				</button>
+				<button data-project="sliding-puzzle" data-size="small">
 					<template>
-						<h2>Sliding puzzle</h2>
-						<p>Lorem ipsum filler text blah blah blah</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>Sliding puzzle</h3>
+							<p>I've always loved puzzles. It seemed only fitting to combine this with my love for webdesign, and create a simple but elegant version of the traditional Fifteen Puzzle. Although the last two of the four variations on the puzzle are a bit too hard, I dare you to give it a try!</p>
+						</div>
 						<a href="https://vrugtehagel.nl/sliding-puzzle" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-				<li data-project="geefeenbeetjeliefde" data-size="large">
+				</button>
+				<button data-project="geefeenbeetjeliefde" data-size="large">
 					<template>
-						<h2>Geef een beetje <span>liefde</span></h2>
-						<p>Lorem ipsum filler text blah blah blah</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>Geef een beetje <span>liefde</span></h3>
+							<p>In times of corona, sometimes all we need is a sweet message to help us get through the day. Teaming up with <a href="https://dev.kitchen/" target="_blank">dev.kitchen</a>, we created this site that allows you to send some love to someone else, and receive some encouraging words back in return. I was responsible for the majority of the front-end, while the people at dev.kitchen provided the back-end and some of the imagery.</p>
+						</div>
 						<a href="http://geefeenbeetjeliefde.nl" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-				<li data-project="SVGMaker" data-size="medium">
+				</button>
+				<button data-project="SVGMaker" data-size="medium">
 					<template>
-						<h2>SVGMaker</h2>
-						<p>Lorem ipsum filler text blah blah blah</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>SVGMaker</h3>
+							<p>I like to make my own assets. Sounds, code snippets, and images. My go-to way of making imagery has mostly been making SVGs - and I wrote them by hand. I like my code, including my images, to be clean and minimal. Thus, I created this tool for myself to make this process of making custom SVG's a little easier. All the SVGs on this page have been made with this tool!</p>
+						</div>
 						<a href="https://vrugtehagel.nl/SVGMaker" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-				<li data-project="art" data-size="small">
+				</button>
+				<button data-project="art" data-size="small">
 					<template>
-						<h2>My drawings</h2>
-						<p>Lorem ipsum filler text blah blah blah</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>My drawings</h3>
+							<p> I love a bunch of different forms of design. I express my creativity in webdesign, usually, but sometimes I do some traditional art just to dream away in the abstract lands of the lines on the paper. Of course, I made a fitting website to hold my creations.</p>
+						</div>
 						<a href="https://vrugtehagel.nl/art" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-				<li data-project="wadeacuff" data-size="large">
+				</button>
+				<button data-project="wadeacuff" data-size="large">
 					<template>
-						<h2>wadeacuff.com</h2>
-						<p>Lorem ipsum filler text blah blah blah</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>wadeacuff.com</h3>
+							<p>Wade is a working artist who's worked in film and video production as well as animating, 3D modeling, matte painting, and illustrating. Trying to get the word out more and more about his amazing art and concepting skills, he asked me to create a fitting, sleak, minimalistic website.</p>
+						</div>
 						<a href="https://wadeacuff.com" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-				<li data-project="pure-css-calculator" data-size="medium">
+				</button>
+				<button data-project="pure-css-calculator" data-size="medium">
 					<template>
-						<h2>Pure CSS calculator</h2>
-						<p>Lorem ipsum filler text blah blah blah</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>Pure CSS calculator</h3>
+							<p>One day, I was thinking about how far you can take functionality with pure HTML and CSS without any Javascript. I realized, you can practically make anything if you're willing to compromize on readable and semantic code. This is how this pure CSS calculator was born. It's a fully functional calculator made without any Javascript whatsoever!</p>
+						</div>
 						<a href="https://vrugtehagel.nl/pure-css-calculator" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-				<li data-project="blog" data-size="small">
+				</button>
+				<button data-project="blog" data-size="small">
 					<template>
-						<h2>Blog</h2>
-						<p>Lorem ipsum filler text blah blah blah</p>
+						<button class="back">
+							<svg viewBox="0 0 48 48" role="img">
+								<path d="M36 12L12 36M12 12L36 36" style="stroke:currentColor;stroke-width:6;stroke-linecap:round;"/>
+							</svg>
+						</button>
+						<div class="poster-content">
+							<h3>Blog</h3>
+							<p>I'm passionate about the things I do and believe in. Sometimes, I like to write about it - and thus, I made myself a small-scale blog where I can share my ideas with the world. It's called "one zero one" (get it?), have a look!</p>
+						</div>
 						<a href="https://vrugtehagel.nl/blog" target="_blank">
-							<svg viewBox="0 0 48 48">
+							<svg viewBox="0 0 48 48" role="img">
 								<path d="M31 17L19 29M16 22L11 27A1 1 0 0 0 21 37L26 32M33 25L39 19A1 1 0 0 0 29 9L23 15" style="stroke:currentColor;stroke-width:4;stroke-linecap:round;fill:none;"/>
 							</svg>
 							Visit site
 						</a>
 					</template>
-				</li>
-			</ul>
-			<article></article>
+				</button>
+			</div>
+			<article id="big-poster"><h3>Placeholder content</h3></article>
 		</section>
 		<section id="contact">
-			<h1>Send me a letter!</h1>
+			<h2>Send me a letter!</h2>
 			<p>I collect messages in bottles. Send me one!</p>
 			<div id="letter">
-				<svg viewBox="0 0 150 100" preserveAspectRatio="none">
+				<svg viewBox="0 0 150 100" preserveAspectRatio="none" role="img">
+					<title>Parchment to write on</title>
 					<path d="M150 105A10 5 0 0 1 140 110V99H150Z" style="fill:#b9a48a;"/>
 					<path d="M3 0H43L45 3L48 0H69L70 2L71 0H106L110 2L112 0H140A10 5 0 0 1 150 5V105A10 5 0 0 0 140 100H132L128 98L125 100H100L98 98L96 100H88L85 98L84 100H53L49 98L48 100H7L5 95L3 97L0 93V52L3 50L0 47V29L2 26L0 23V5" style="fill:#f4e4b1;"/>
 					<path d="M4 2L3 0L0 5Z" style="fill:#b9a48a;"/>
@@ -428,8 +485,9 @@
 				<button>send</button>
 			</div>
 			<div id="letter-thanks">
-				<h1>Thank you!</h1>
-				<svg viewBox="20 20 60 60">
+				<h2>Thank you!</h2>
+				<svg viewBox="20 20 60 60" role="img">
+					<title>Message in a bottle</title>
 					<defs>
 						<radialGradient id="voila-here-it-is">
 							<stop offset="10%" stop-color="#ffd700" stop-opacity=".5"></stop>
@@ -457,7 +515,8 @@
 					</g>
 				</svg>
 			</div>
-			<svg viewBox="0 0 160 90">
+			<svg viewBox="0 0 160 90" role="img">
+				<title>Bottom of the cave</title>
 				<path d="M0 27A4 4 0 0 1 4 31V73H39A5 5 0 0 1 44 78H77A9 9 0 0 1 86 69H131A11 11 0 0 0 142 58A7 7 0 0 1 149 51H160V90H0Z" style="fill:#586981;"/>
 				<path d="M84 78H94L91 76ZM137 69L146 67L149 69M152 53H158L155 54M34 78L23 76L19 78M55 86L51 84L43 86M120 87H109L120 85" style="fill:rgba(0, 0, 0, .08);"/>
 				<path d="M0 52A6 6 0 0 1 6 58V80A10 10 0 0 1 16 90H0ZM116 90A8 8 0 0 1 124 82H150A6 6 0 0 1 156 76V66A4 4 0 0 1 160 62V90Z" style="fill:#374368;"/>
@@ -471,7 +530,7 @@
 		</section>
 	</main>
 	<footer>
-		<svg viewBox="0 0 40 40">
+		<svg viewBox="0 0 40 40" role="img">
 			<title>vrugtehagel</title>
 			<g style="stroke: currentColor;fill: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 4px;">
 				<path d="M25 28L32 12 M7 12L14 28L21 12" style="fill: none;"></path>
@@ -479,7 +538,7 @@
 			</g>
 		</svg>
 		<address>
-			<span></span>
+			<span id="email"></span>
 			<span>&copy; 2020 vrugtehagel. All Rights Reserved.</span>
 		</address>
 	</footer>

@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	// set email address
 	(() => {
-		const email = document.querySelector('footer span');
+		const email = document.getElementById('email');
 		email.textContent = 'vrugtehagel' + '@gmail.com';
 	})();
 
@@ -59,7 +59,10 @@ document.addEventListener('DOMContentLoaded', function(){
 		let timeoutID = -1;
 
 		const closePoster = () => {
+			const content = article.querySelector('.poster-content');
 			wallOfFame.classList.remove('poster-open');
+			content.classList.remove('scrolling');
+			document.body.classList.remove('no-scroll');
 			clearTimeout(timeoutID);
 			timeoutID = setTimeout(() => {
 				wallOfFame.classList.add('ready');
@@ -85,10 +88,25 @@ document.addEventListener('DOMContentLoaded', function(){
 				article.style.setProperty('--top', top + 'px');
 				article.style.setProperty('--left', left + 'px');
 
+				document.body.classList.add('no-scroll');
+
 				while(article.firstChild) article.removeChild(article.lastChild);
 				article.setAttribute('data-project', name);
 				article.appendChild(template.content.cloneNode(true));
 				poster.classList.add('selected');
+
+				const back = article.querySelector('.back');
+				back.addEventListener('click', closePoster);
+
+				const content = article.querySelector('.poster-content');
+				content.addEventListener('scroll', event => {
+					const top = content.scrollTop;
+					content.classList.add('scrolling');
+					content.style.setProperty('--scroll', top + 'px');
+				});
+				content.style.setProperty('--scroll', '0px');
+				content.scrollTo(0, 0);
+
 				requestAnimationFrame(() => {
 					wallOfFame.classList.remove('ready');
 					requestAnimationFrame(() => {
