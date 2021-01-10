@@ -302,11 +302,11 @@ button[data-project=sliding-puzzle],
 	background-color: #bbf181;
 }
 
-[data-project=geefeenbeetjeliefde] { background-color: #f1f9ff; color: rgba(0, 0, 0, 0.75); }
-button[data-project=geefeenbeetjeliefde],
-[data-project=geefeenbeetjeliefde] .poster-content {
-	background-image:url(images/geefeenbeetjeliefde.png);
-	background-color: #f1f9ff;
+[data-project=github] { background-color: #fff; color: rgba(0, 0, 0, 0.75); }
+button[data-project=github],
+[data-project=github] .poster-content {
+	background-image:url(images/github.jpg);
+	background-color: #fff;
 }
 
 [data-project=SVGMaker] { background-color: #303030; }
