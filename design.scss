@@ -7,7 +7,7 @@
 body {
 	margin: 0;
 	font: 300 1rem / 1.5 Roboto, arial, sans-serif;
-	background-color: #333b44;
+	background-color: #313541;
 	color: rgba(255, 255, 255, .75);
 	width: 100%;
 	overflow-x: hidden;
@@ -201,7 +201,7 @@ main {
 	z-index: 2;
 	min-height: auto;
 	padding-bottom: 37.5%;
-	background-color: #333b44;
+	background-color: #313541;
 	transition: background-color 0s 0s;
 	margin-bottom: 6.25vw;
 	width: 100%;
@@ -377,13 +377,7 @@ button[data-project=blog],
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	transition:
-		box-shadow .5s,
-		width .5s,
-		height .5s,
-		left .5s,
-		top .5s,
-		opacity 0s .5s;
+	transition: all .5s, opacity 0s .5s;
 	& > a {
 		display: block;
 		width: 100%;
@@ -429,13 +423,7 @@ button[data-project=blog],
 	opacity: 1;
 	box-shadow: 0 0 0 100vmax rgba(24, 39, 89, 0.4);
 	pointer-events: initial;
-	transition:
-		background-size .5s,
-		width .5s,
-		height .5s,
-		left .5s,
-		top .5s,
-		opacity 0s 0s;
+	transition: all .5s, opacity 0s 0s;
 	& > a { opacity: 1; }
 	& > button { opacity: .7; }
 }
@@ -567,7 +555,8 @@ button[data-project=blog],
 		background-size: 100% auto;
 		background-position: center center;
 		transform: none;
-		filter: grayscale(.5);
+		filter: grayscale(.1);
+		opacity: 0.9;
 		transition: .5s;
 		&::after {
 			content: "";
