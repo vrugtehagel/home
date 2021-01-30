@@ -1,0 +1,13 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+	<defs>
+		<filter id="shadow" width="200%" height="200%">
+			<feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.4"></feDropShadow>
+		</filter>
+	</defs>
+	<rect x="27" y="6" width="87" height="131" style="fill:#f7f5eb;filter:url(#shadow)"/>
+	<rect x="27" y="61" width="65" height="76" style="fill:#555"/>
+	<path d="M29 127A1 1 0 0 0 47 127A1 1 0 0 0 29 127ZM92 137H114V61H92Z" style="fill:#f4e660"/>
+	<path d="M37 70A1 1 0 0 0 40 70A1 1 0 0 0 37 70M58 70A1 1 0 0 0 61 70A1 1 0 0 0 58 70M80 70A1 1 0 0 0 83 70A1 1 0 0 0 80 70M37 89A1 1 0 0 0 40 89A1 1 0 0 0 37 89M58 89A1 1 0 0 0 61 89A1 1 0 0 0 58 89M80 89A1 1 0 0 0 83 89A1 1 0 0 0 80 89M37 108A1 1 0 0 0 40 108A1 1 0 0 0 37 108M58 108A1 1 0 0 0 61 108A1 1 0 0 0 58 108M80 108A1 1 0 0 0 83 108A1 1 0 0 0 80 108M58 127A1 1 0 0 0 61 127A1 1 0 0 0 58 127M80 127A1 1 0 0 0 83 127A1 1 0 0 0 80 127" style="fill:#aaa"/>
+	<path d="M102 70A1 1 0 0 0 105 70A1 1 0 0 0 102 70M102 89A1 1 0 0 0 105 89A1 1 0 0 0 102 89M102 108A1 1 0 0 0 105 108A1 1 0 0 0 102 108M102 127A1 1 0 0 0 105 127A1 1 0 0 0 102 127" style="fill:#928a39"/>
+	<path d="M73 28A1 1 0 0 1 85 28Q85 32 73 44H86M91 27C91 20 103 20 103 27Q103 33 95 33Q103 33 103 39C103 46 91 46 91 39" style="stroke: #555;fill:none;stroke-width:2;stroke-linejoin:round"/>
+</svg>

@@ -1,5 +1,4 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-	<rect x="0" y="0" width="200" height="200" style="fill:#303030;"/>
 	<circle cx="100" cy="100" r="94" style="fill:#282828;"/>
 	<path d="M55 91V55H73V91H91V55H109V91H127V55H145V145H127V109H109V145" style="fill:#5050dd;"/>
 </svg>
