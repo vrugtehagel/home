@@ -134,7 +134,7 @@
 			</header>
 		</section>
 		<section id="options">
-			<h2>These are some fish of the sea.</h2>
+			<h2 class="screen-readers-only">These are some fish of the sea.</h2>
 			<div class="option">
 				<svg viewBox="0 0 100 100" role="img">
 					<title>Sardines</title>
@@ -481,7 +481,8 @@
 					<path d="M3 0H43L45 3L48 0H69L70 2L71 0H106L110 2L112 0H140A10 5 0 0 1 150 5V105A10 5 0 0 0 140 100H132L128 98L125 100H100L98 98L96 100H88L85 98L84 100H53L49 98L48 100H7L5 95L3 97L0 93V52L3 50L0 47V29L2 26L0 23V5" style="fill:#f4e4b1;"/>
 					<path d="M4 2L3 0L0 5Z" style="fill:#b9a48a;"/>
 				</svg>
-				<textarea placeholder="It's okay, you can tell me anything. I don't judge."></textarea>
+				<label for="message" class="screen-readers-only">Your message</label>
+				<textarea id="message" name="message" placeholder="It's okay, you can tell me anything. I don't judge."></textarea>
 				<button>send</button>
 			</div>
 			<div id="letter-thanks">

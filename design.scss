@@ -45,6 +45,16 @@ main {
 	overflow-x: hidden;
 }
 
+.screen-readers-only {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	white-space: nowrap; 
+	overflow: hidden;
+}
+
 .dark #intro { color: rgba(255, 255, 255, .8); }
 
 #intro {
@@ -115,7 +125,6 @@ main {
 	background: linear-gradient(to bottom, #60c2ee, #284998 60%);
 	color: rgba(255, 255, 255, .8);
 	padding-bottom: 72px;
-	h2 { display: none; }
 	&::before {
 		content: "";
 		position: absolute;
@@ -723,7 +732,7 @@ footer {
 	height: 108px;
 	background-color: #374368;
 	box-shadow: 0 -10px 0 #374368;
-	color: rgba(255, 255, 255, 0.4);
+	color: rgba(255, 255, 255, 0.6);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
