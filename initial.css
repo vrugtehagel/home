@@ -1,0 +1,112 @@
+:root { font-size: 125%; }
+@media (max-width: 1000px) {
+	:root { font-size: 112.5%; }
+}
+@media (min-width: 1600px) {
+	:root { font-size: 137.5%; }
+}
+
+body {
+	--time: 0;
+	width: 100%;
+	margin: 0;
+	color: rgb(255 255 255 / 75%);
+	background-color: #313541;
+	font: 300 1rem / 1.5 Roboto, arial, sans-serif;
+	overflow-x: hidden;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-weight: 900;
+	font-family: Ubuntu, Roboto, arial, sans-serif;
+	letter-spacing: -.08ch
+}
+
+h1 { font-size: 4rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+
+svg { display: block; }
+
+section {
+	width: 100%;
+	position: relative;
+	content-visibility: auto;
+}
+
+main { width: 100vw; overflow-x: hidden; }
+
+#intro {
+	height: 100vh;
+	overflow: hidden;
+	text-align: right;
+}
+
+body:not(.dark) #intro { color: rgb(0 0 0 / 75%); }
+
+#intro svg {
+	width: 177.777vh;
+	height: 100vh;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+@media (max-width: 1000px) and (max-aspect-ratio: 16/9) {
+	#intro svg {
+		left: 20%;
+		transform: translateX(-20%);
+	}
+}
+@media (max-width: 600px) and (max-aspect-ratio: 16/9) {
+	#intro svg {
+		left: 40%;
+		transform: translateX(-40%);
+	}
+}
+@media (min-aspect-ratio: 16/9) {
+	#intro svg {
+		width: 100vw;
+		height: 56.25vw;
+		left: 0;
+	}
+}
+
+#intro svg.logo {
+	width: 48px;
+	height: 48px;
+	top: 12px;
+	bottom: unset;
+	left: 18px;
+	transform: none;
+	color: #fff;
+	opacity: calc(-.6 * var(--time) + 1.3);
+	z-index: 5;
+}
+
+#intro header {
+	max-width: 80%;
+	padding: 0 10%;
+	margin: 0;
+	position: absolute;
+	top: 40vh;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+#intro h1 { font-size: 5rem; }
+#intro p {
+	padding: 0 10%;
+	margin: 0;
+	font-size: 1.5rem;
+}
+
+@media (max-width: 1600px) {
+	#intro h1 { font-size: 4rem; }
+	#intro p { font-size: 1.3rem; }
+}
+@media (max-width: 1200px) {
+	#intro h1 { font-size: 3rem; }
+	#intro p { font-size: 1rem; }
+}
