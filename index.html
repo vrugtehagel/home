@@ -28,10 +28,13 @@
 	<meta property="og:image:secure_url" content="https://vrugtehagel.nl/card.png">
 	<meta property="og:description" content="I'm vrugtehagel. I create custom-fit, handcrafted, tailor-made web experiences. I'm an enthusiastic frontender who also does graphic, UX and UI design.">
 
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="design.css">
-	<script src="general.js" defer></script>
+	<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" as="style" href="design.min.css" onload="this.onload=null;this.rel='stylesheet'">
+	<script src="general.min.js" defer></script>
 	<title>vrugtehagel</title>
+	<style>
+		:root{font-size:125%}@media (max-width:1000px){:root{font-size:112.5%}}@media (min-width:1600px){:root{font-size:137.5%}}body{--time:0;width:100%;margin:0;color:rgb(255 255 255 / 75%);background-color:#313541;font:300 1rem/1.5 Roboto,arial,sans-serif;overflow-x:hidden}h1,h2,h3{margin:0;font-weight:900;font-family:Ubuntu,Roboto,arial,sans-serif;letter-spacing:-.08ch}h1{font-size:4rem}h2{font-size:4rem}h3{font-size:3rem}svg{display:block}section{width:100%;position:relative;content-visibility:auto}main{width:100vw;overflow-x:hidden}#intro{height:100vh;overflow:hidden;text-align:right}body:not(.dark) #intro{color:rgb(0 0 0 / 75%)}#intro svg{width:177.777vh;height:100vh;position:absolute;bottom:0;left:0}@media (max-width:1000px) and (max-aspect-ratio:16/9){#intro svg{left:20%;transform:translateX(-20%)}}@media (max-width:600px) and (max-aspect-ratio:16/9){#intro svg{left:40%;transform:translateX(-40%)}}@media (min-aspect-ratio:16/9){#intro svg{width:100vw;height:56.25vw;left:0}}#intro svg.logo{width:48px;height:48px;top:12px;bottom:unset;left:18px;transform:none;color:#fff;opacity:calc(-.6 * var(--time) + 1.3);z-index:5}#intro header{max-width:80%;padding:0 10%;margin:0;position:absolute;top:40vh;right:0;transform:translateY(-50%)}#intro h1{font-size:5rem}#intro p{padding:0 10%;margin:0;font-size:1.5rem}@media (max-width:1600px){#intro h1{font-size:4rem}#intro p{font-size:1.3rem}}@media (max-width:1200px){#intro h1{font-size:3rem}#intro p{font-size:1rem}}
+	</style>
 </head>
 <body>
 	<main>
@@ -183,35 +186,34 @@
 				<svg viewBox="0 0 100 100" role="img">
 					<title>Jellyfish</title>
 					<defs>
-						<g id="jellyfish-squiggles-template" style="stroke: rgba(196, 183, 206, .8);stroke-width:3;stroke-linecap:round;fill:none;">
-							<path d="M 50.4007 36 Q 50.4007 36 50.4007 36 Q 50.4007 49.1707 38.1707 61.4007 Q 25.9408 74.4599 26.7108 87.4599 Q 27.4809 88.23 27.4809 89">
-								<animate attributeName="d" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0; .5; 1"/>
-							</path>
-							<path d="M 41.4493 36 Q 41.4493 41.4707 46.5293 46.5507 Q 51.6092 60.1599 43.6892 73.1599 Q 35.7691 81.08 35.7691 89 Q 35.7691 89 35.7691 89">
-								<animate attributeName="d" begin="-1.8s" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0; .5; 1"/>
-							</path>
-							<path d="M 29.2993 36 Q 29.2993 47.7707 40.2293 58.7007 Q 51.1592 71.8599 49.0892 84.8599 Q 47.0191 86.93 47.0191 89 Q 47.0191 89 47.0191 89">
-								<animate attributeName="d" begin="-3.6s" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0; .5; 1"/>
-							</path>
-							<path d="M 37.5757 36 Q 37.5757 36 37.5757 36 Q 37.5757 42.5207 31.5207 48.5757 Q 25.4658 62.1099 32.4108 75.1099 Q 39.3559 82.055 39.3559 89">
-								<animate attributeName="d" begin="-6.1s" repeatCount="indefinite" dur="8s" values="M25 36Q25 36 25 36Q25 36 25 36Q25 50 38 63Q51 76 51 89; M52 36Q52 36 52 36Q52 50 39 63Q26 76 26 89Q26 89 26 89; M25 36Q25 50 38 63Q51 76 51 89Q51 89 51 89Q51 89 51 89" keyTimes="0; .5; 1"/>
-							</path>
+						<g id="jellyfish-squiggles-template-1" style="stroke: rgba(196, 183, 206, .8);stroke-width:3;stroke-linecap:round;fill:none;stroke-dasharray:60 200;">
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 8s linear 0s infinite wiggleSquiggle;"/>
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 8.2s linear -2s infinite wiggleSquiggle;"/>
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 7.9s linear -4s infinite wiggleSquiggle;"/>
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 8s linear -6s infinite wiggleSquiggle;"/>
+						</g>
+						<g id="jellyfish-squiggles-template-2" style="stroke: rgba(196, 183, 206, .8);stroke-width:3;stroke-linecap:round;fill:none;stroke-dasharray:60 200;">
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 8s linear 0s infinite wiggleSquiggle;"/>
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 8.2s linear -3s infinite wiggleSquiggle;"/>
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 7.9s linear -5s infinite wiggleSquiggle;"/>
+							<path d="M26 -84C26 -54 50 -54 50 -24S26 6 26 36S50 65 50 96" style="animation: 8s linear -6s infinite wiggleSquiggle;"/>
 						</g>
 					</defs>
 					<style>
 						@keyframes squish { to { transform: scale(1.1, .9); } }
 						@keyframes float { to { transform: translateY(5px); } }
+						@keyframes wiggleSquiggle { from { stroke-dashoffset: -132; } to { stroke-dashoffset: 0; transform: translateY(120px); }
 					</style>
 					<use href="#jellyfish-template" x="30" y="0" style="transform-origin:70px 50px;transform:scale(.7) rotate(7deg);"></use>
 					<g style="transform-origin:40px 50px;transform:translateY(-5px) rotate(-10deg);">
 						<g style="animation: 1.5s ease-in-out infinite alternate float;">
-							<use href="#jellyfish-squiggles-template"></use>
+							<use href="#jellyfish-squiggles-template-1"></use>
 							<path d="M21 35A1 1 0 0 1 56 35A1 1 0 0 1 49 35A1 1 0 0 1 42 35A1 1 0 0 1 35 35A1 1 0 0 1 28 35A1 1 0 0 1 21 35" style="fill:#c6b3cc;transform-origin:39px 29px;animation: 1.5s ease-in-out infinite alternate squish;"/>
 						</g>
 					</g>
 					<g style="transform-origin:40px 50px;transform:translateX(30px) scale(.7) rotate(5deg);opacity:0.7;">
 						<g style="animation: 1.5s ease-in-out -.5s infinite alternate float;">
-							<use href="#jellyfish-squiggles-template"></use>
+							<use href="#jellyfish-squiggles-template-2"></use>
 							<path d="M21 35A1 1 0 0 1 56 35A1 1 0 0 1 49 35A1 1 0 0 1 42 35A1 1 0 0 1 35 35A1 1 0 0 1 28 35A1 1 0 0 1 21 35" style="fill:#b2aac9;transform-origin:39px 29px;animation: 1.5s ease-in-out -.5s infinite alternate squish;"/>
 						</g>
 					</g>
